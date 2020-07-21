@@ -1,30 +1,30 @@
 class BankAccount
 
-attr_reader :reader
+  attr_reader :reader
 
-attr_accessor :balance, :status
+  attr_accessor :balance, :status
 
-def initialize(name)
+  def initialize(name)
   
-  @name = name
+    @name = name
   
-  @balance = 1000
+   @balance = 1000
   
-  @status = "open"
+    @status = "open"
   
-end
+  end
 
 
-def deposit(deposit_ammount)
+  def deposit(deposit_ammount)
   
-self.balance += deposit_ammount
+  self.balance += deposit_ammount
 
-end
+  end
 
 
-def display_balance
+  def display_balance
   
-  "your balance is $#{balance}."
+   "your balance is $#{balance}."
   
 end
 
